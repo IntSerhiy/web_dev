@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Усиновлення тварин</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Навігація -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Притулок для тварин</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-gray-300">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-gray-300">Про нас</a></li>
+                    <li><a href="adoption.html" class="hover:text-gray-300">Усиновлення</a></li>
+                    <li><a href="volunteers.html" class="hover:text-gray-300">Волонтери</a></li>
+                    <li><a href="blog.html" class="hover:text-gray-300">Блог</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Усиновлення тварини</h2>
+            <form class="bg-white p-6 rounded-lg shadow-lg max-w-xl mx-auto">
+                <label class="block text-left mb-2" for="name">Ваше ім'я:</label>
+                <input type="text" id="name" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg"
+                    placeholder="Ваше ім'я" required>
+
+                <label class="block text-left mb-2" for="animal">Яку тварину хочете усиновити?</label>
+                <select id="animal" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg" required>
+                    <option value="Кіт">Кіт</option>
+                    <option value="Пес">Пес</option>
+                </select>
+
+                <label class="block text-left mb-2" for="message">Чому ви хочете усиновити цю тварину?</label>
+                <textarea id="message" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg"
+                    placeholder="Ваше повідомлення" required></textarea>
+
+                <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-500">Відправити
+                    заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Притулок для тварин. Усі права захищено.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
